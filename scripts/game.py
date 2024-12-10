@@ -68,10 +68,10 @@ class Game:
 
         # Affichage du score et de l'argent
         score_text = self.font.render(f"Score: {self.score}", True, (255, 255, 255))
-        screen.blit(score_text, (100, 100))
+        screen.blit(score_text, (300, 150))
 
         money_text = self.font.render(f"{self.money}$", True, (255, 255, 255))
-        screen.blit(money_text, (screen.get_width() - money_text.get_width() - 200, 100))
+        screen.blit(money_text, (screen.get_width() - money_text.get_width() - 300, 150))
 
         # Vérifier si le score est supérieur ou égal à 50 et jouer la vidéo
         if self.score >= 5000000 and not self.video_manager.video_finished:
